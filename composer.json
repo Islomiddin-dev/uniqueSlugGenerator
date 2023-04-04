@@ -25,7 +25,7 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=unique-slug-generator --ansi --force"
+            "@php artisan vendor:publish --tag=unique-slug-generator --force"
         ],
         "post-package-install": [
             "@php artisan vendor:publish --tag=unique-slug-generator --force"
