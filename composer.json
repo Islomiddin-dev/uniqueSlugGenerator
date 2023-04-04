@@ -25,10 +25,10 @@
     },
     "scripts": {
         "post-package-install": [
-            "@php artisan vendor:publish --provider=IslomiddinDev\\UniqueSlugGenerator\\LibraryServiceProvider --force"
+            "@php artisan vendor:publish --tag=unique-slug-generator --force"
         ],
         "post-package-update": [
-            "@php artisan vendor:publish --provider=IslomiddinDev\\UniqueSlugGenerator\\LibraryServiceProvider --force"
+            "@php artisan vendor:publish --tag=unique-slug-generator --force"
         ]
     }
 }

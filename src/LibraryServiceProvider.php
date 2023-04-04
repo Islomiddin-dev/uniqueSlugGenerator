@@ -11,6 +11,6 @@ class LibraryServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/Helpers' => app_path('Helpers'),
             __DIR__ . '/HelperServiceProvider.php' => app_path('Providers/HelperServiceProvider.php'),
-        ]);
+        ], 'unique-slug-generator');
     }
 }
