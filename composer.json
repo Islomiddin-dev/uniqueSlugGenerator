@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "IslomiddinDev\\UniqueSlugGenerator\\HelperServiceProvider"
+                "IslomiddinDev\\UniqueSlugGenerator\\LibraryServiceProvider"
             ]
         }
     }
