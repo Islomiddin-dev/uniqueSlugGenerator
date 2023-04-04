@@ -1,6 +1,6 @@
 <?php
 
-namespace IslomiddinDev\UniqueSlugGenerator;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
