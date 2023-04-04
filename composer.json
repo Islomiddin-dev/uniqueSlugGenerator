@@ -1,0 +1,26 @@
+{
+    "name": "islomiddin-dev/unique-slug-generator",
+    "description": "Unique slug generator for Laravel framework. supports soft delete and hard delete",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "IslomiddinDev\\UniqueSlugGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Islomiddin",
+            "email": "hamisha0327@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IslomiddinDev\\UniqueSlugGenerator\\HelperServiceProvider"
+            ]
+        }
+    }
+}
