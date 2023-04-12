@@ -14,6 +14,7 @@ class LibraryServiceProvider extends ServiceProvider
         }
 
         if (file_exists(app_path('Providers/HelperServiceProvider.php'))) {
+            echo "\033[31m";
             echo 'HelperServiceProvider already exists. Please add this code to its register method.' . PHP_EOL;
             echo 'foreach (glob(app_path(\'Helpers\') . \'/*.php\') as $file) {' . PHP_EOL;
             echo '    require_once $file;' . PHP_EOL;
