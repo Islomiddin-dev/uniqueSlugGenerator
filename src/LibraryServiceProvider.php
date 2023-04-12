@@ -9,9 +9,9 @@ class LibraryServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $message = "\033[44;37m INFO \033[0m";
+        $message = PHP_EOL ."   \033[44;37m INFO \033[0m";
         $message .= "Package islomiddin-dev/unique-slug-generator is successfully installed" . PHP_EOL;
-        $message .= "\033[44;37m INFO \033[0m";
+        $message .= PHP_EOL ."  \033[44;37m INFO \033[0m";
         $message .= "Please add this provider to the list of providers in your config/app.php file. ";
         $message  .= "\033[32m";
         $message  .= "App\Providers\HelperServiceProvider::class,";
