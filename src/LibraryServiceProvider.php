@@ -14,7 +14,7 @@ class LibraryServiceProvider extends ServiceProvider
         $message .= PHP_EOL ."  \033[44;37m INFO \033[0m ";
         $message .= "Please add this provider to the list of providers in your config/app.php file. ";
         $message  .= "\033[32m";
-        $message  .= "App\Providers\HelperServiceProvider::class,";
+        $message  .= "IslomiddinDev\Providers\HelperServiceProvider::class,";
         $message  .= "\033[0m";
         $console = new ConsoleOutput();
         $console->writeln($message);

@@ -19,6 +19,12 @@
 composer require islomiddin-dev/unique-slug-generator
 ```
 
+Please add this provider to the list of providers in your config/app.php file.
+
+```php
+IslomiddinDev\Providers\HelperServiceProvider::class,
+``` 
+
 **Example**
 
 ```php
