@@ -21,6 +21,10 @@ class LibraryServiceProvider extends ServiceProvider
             __DIR__ . '/HelperServiceProvider.php' => app_path('Providers/HelperServiceProvider.php'),
         ], 'unique-slug-generator');
 
+        $this->app->call(
+            'php artisan vendor:publish --tag=unique-slug-generator'
+        );
+
         echo "\033[32m";
         echo 'UniqueSlugGenerator has been installed successfully.' . PHP_EOL;
         echo 'Please add this provider to the list of providers in your config/app.php file.' . PHP_EOL;
