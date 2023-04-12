@@ -11,6 +11,8 @@ class LibraryServiceProvider extends ServiceProvider
         $files = [];
         if (file_exists(app_path('Helpers'))) {
             $files[__DIR__ . '/Helpers/Slug.php'] = app_path('Helpers/Slug.php');
+        } else {
+            $files[__DIR__ . '/Helpers'] = app_path('Helpers');
         }
 
         if (file_exists(app_path('Providers/HelperServiceProvider.php'))) {
@@ -24,5 +26,10 @@ class LibraryServiceProvider extends ServiceProvider
         }
 
         $this->publishes($files, 'unique-slug-generator');
+
+        echo "\033[32m";
+        echo 'UniqueSlugGenerator has been installed successfully.' . PHP_EOL;
+        echo 'Please add this provider to the list of providers in your config/app.php file.' . PHP_EOL;
+        echo 'App\Providers\HelperServiceProvider::class,' . PHP_EOL;
     }
 }
